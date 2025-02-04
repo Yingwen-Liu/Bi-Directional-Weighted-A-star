@@ -10,6 +10,7 @@ class Node:
     def update(self, g, h, parent):
         self.g = g
         self.h = h
+        self.f = g + h
         self.parent = parent
 
 class PriorityQueue:
